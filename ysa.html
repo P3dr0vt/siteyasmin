@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("foto1.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">PRINCIPAL</a>
+    <a href="#menu" class="w3-bar-item w3-button">PRESENTES</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE NÓS</a>
+ 
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Todos os presentes estarão disponíveis pro resto da vida!</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Feliz dia<br>DOS NAMORADOS</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Feliz Dia<br>Dos Namorados</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Escolha seus presentes</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">PRESENTES</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Toque físico</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Date</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Comidas</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Um abraço</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Um abraço bem apertado daqueles que param o mundo</p>
+      <hr>
+   
+      <h1><b>Um beijo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Um beijo daqueles que nos faz ir a lugares onde só existe nós dois. Esquecendo tudo a nossa volta. </p>
+      <hr>
+      
+      <h1><b>Um carinho</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Um carinho apenas para lembrar que estamos ali, uma pela outra.</p>
+      <hr>
+
+      <h1><b>Uma conversa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Daquelas que acalmam o coração.</p>
+      <hr>
+
+      <h1><b>Pedido</b> <span class="w3-tag w3-red w3-round">Quente</span><span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Daqueles que você sabe qual é!</p>
+      <hr>
+
+      <h1><b>Pedido</b> <span class="w3-tag w3-grey w3-round">Extra</span><span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Qualquer pedido, use com moderação.</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Sair da </b> <span class="w3-tag w3-grey w3-round">rotina</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$Depende do date</span></h1>
+      <p class="w3-text-grey">Algum programa diferente para sair da rotina </p>
+      <hr>
+   
+      <h1><b>Uma voltinha na cidade</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Daquelas só para fazer o que a gente ama fazer juntas, andar de moto e tomar açai!</p>
+      <hr>
+      
+      <h1><b>Viagem diferente</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Depende do lugar</span></h1>
+      <p class="w3-text-grey">Daquelas que a gente faz para reconectar se uma com a outra e aproveitar a companhia uma da outra!</p>
+      <hr>
+
+      <h1><b>Datezinho em casa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">Aquele encontro que não tem erro, nós e nosso filme e sonequinha!</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Comida</b> <span class="w3-tag w3-grey w3-round">Caseira</span><span class="w3-right w3-tag w3-dark-grey w3-round">$Grátis</span></h1>
+      <p class="w3-text-grey">A comidinha gostosa que só a gente faz</p>
+      <hr>
+   
+      <h1><b>Lanche</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Depende do lugar</span></h1>
+      <p class="w3-text-grey">O bom e velho pão com linguiça que a gente ama</p>
+      <hr>
+      
+      <h1><b>Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Depende do lugar</span></h1>
+      <p class="w3-text-grey">A pizza que não pode faltar</p>
+      <hr>
+      
+      <h1><b>Sushi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$Caríssimo</span></h1>
+      <p class="w3-text-grey">Aquele que a gente come uma vez na vida e outra na morte, até lambendo os beiços</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre Nós</h1>
+    <p>Quero que saiba o quanto você é especial para mim. Cada momento ao seu lado é mágico e único. Seu sorriso ilumina meus dias, seu abraço acalma meu coração. Você é a minha luz, minha pessoa. Eu te amo mais que tudo.</p>
+    <p><strong>Com amor,</strong>
+    <p>Sua namorada</p>
+    <img src="foto2.jpg" style="width:50%" class="w3-margin-top w3-margin-bottom">
+    <h1><b> Ao seu lado tenho minhas melhores risadas, você faz o meu dia.</b></h1>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
